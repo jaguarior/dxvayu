@@ -17,6 +17,11 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
+# HALs
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/media
+
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := 30
@@ -429,7 +434,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/xiaomi
+    hardware/xiaomi \
+    hardware/qcom-caf
 
 # Net
 PRODUCT_PACKAGES += \
