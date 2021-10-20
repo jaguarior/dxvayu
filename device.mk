@@ -18,9 +18,9 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # HALs
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/media
+SRC_AUDIO_HAL_DIR := hardware/qcom/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom/sm8150/display
+SRC_MEDIA_HAL_DIR := hardware/qcom/sm8150/media
 
 # Shipping level
 PRODUCT_SHIPPING_API_LEVEL := 30
@@ -435,7 +435,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
-    hardware/qcom-caf
+    hardware/qcom
 
 # Net
 PRODUCT_PACKAGES += \
