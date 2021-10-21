@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_vayu.mk
+    $(LOCAL_DIR)/ssos_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_vayu-eng \
-    banana_vayu-userdebug \
-    banana_vayu-user
+    ssos_vayu-eng \
+    ssos_vayu-userdebug \
+    ssos_vayu-user
