@@ -11,10 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit device configurations
 $(call inherit-product, device/xiaomi/vayu/device.mk)
 
-# Inherit common ArrowOS configurations
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit common CesiumOS configurations
+$(call inherit-product, vendor/cesium/config/common.mk)
 
-PRODUCT_NAME := arrow_vayu
+TARGET_GAPPS_ARCH := arm64
+TARGET_USES_BLUR := true
+TARGET_BOOTANIMATION_RES := 1080
+IS_PHONE := true
+
+PRODUCT_NAME := cesium_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := Poco X3 Pro
@@ -28,6 +33,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_MODEL=M2102J20SI
 
 BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
-
-DEVICE_MAINTAINER := kubersharma001
-
