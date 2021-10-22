@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ssos_vayu.mk
+    $(LOCAL_DIR)/cesium_vayu.mk
 
 COMMON_LUNCH_CHOICES := \
-    ssos_vayu-eng \
-    ssos_vayu-userdebug \
-    ssos_vayu-user
+    cesium_vayu-eng \
+    cesium_vayu-userdebug \
+    cesium_vayu-user
